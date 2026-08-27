@@ -1,0 +1,4 @@
+# One target per line. Lines starting with # are ignored.
+# Only include targets you are authorized to scan.
+https://example.com
+https://example.org

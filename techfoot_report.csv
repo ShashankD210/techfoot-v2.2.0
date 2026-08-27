@@ -1,0 +1,2 @@
+product,version,category,confidence,cpe,cve_id,severity,cvss_score,published,match_type,known_exploited_kev,description
+cloudflare,unknown,Web Server,low,,,,,,,,

@@ -1,0 +1,182 @@
+{
+  "target": "https://example.com",
+  "scan_time_utc": "2026-08-27T12:29:58.172028+00:00",
+  "elapsed_seconds": 14.6,
+  "technologies_detected": [
+    {
+      "category": "Web Server",
+      "product": "cloudflare",
+      "version": "unknown",
+      "confidence": "low",
+      "evidence": "Server header: cloudflare",
+      "cpe": null,
+      "cves": []
+    }
+  ],
+  "extras": {
+    "exposures": [],
+    "robots": {
+      "robots_found": false,
+      "disallowed_paths": [],
+      "sitemaps": []
+    },
+    "security_headers": {
+      "score_pct": 0,
+      "grade": "F",
+      "findings": [
+        {
+          "header": "strict-transport-security",
+          "present": false,
+          "value": "",
+          "points": 0,
+          "max_points": 15,
+          "description": "Enforces HTTPS (HSTS)."
+        },
+        {
+          "header": "content-security-policy",
+          "present": false,
+          "value": "",
+          "points": 0,
+          "max_points": 20,
+          "description": "Mitigates XSS/data-injection via a content policy."
+        },
+        {
+          "header": "x-frame-options",
+          "present": false,
+          "value": "",
+          "points": 0,
+          "max_points": 10,
+          "description": "Mitigates clickjacking."
+        },
+        {
+          "header": "x-content-type-options",
+          "present": false,
+          "value": "",
+          "points": 0,
+          "max_points": 10,
+          "description": "Prevents MIME-sniffing (should be 'nosniff')."
+        },
+        {
+          "header": "referrer-policy",
+          "present": false,
+          "value": "",
+          "points": 0,
+          "max_points": 10,
+          "description": "Controls how much referrer info is leaked."
+        },
+        {
+          "header": "permissions-policy",
+          "present": false,
+          "value": "",
+          "points": 0,
+          "max_points": 10,
+          "description": "Restricts powerful browser features (camera, geo, etc.)."
+        },
+        {
+          "header": "x-xss-protection",
+          "present": false,
+          "value": "",
+          "points": 0,
+          "max_points": 5,
+          "description": "Legacy XSS filter toggle (superseded by CSP, still checked)."
+        },
+        {
+          "header": "cross-origin-opener-policy",
+          "present": false,
+          "value": "",
+          "points": 0,
+          "max_points": 10,
+          "description": "Isolates browsing context from cross-origin windows."
+        },
+        {
+          "header": "cross-origin-resource-policy",
+          "present": false,
+          "value": "",
+          "points": 0,
+          "max_points": 10,
+          "description": "Restricts cross-origin resource embedding."
+        }
+      ],
+      "information_disclosure": [
+        {
+          "header": "server",
+          "value": "cloudflare"
+        }
+      ]
+    },
+    "tls": {
+      "hostname": "example.com",
+      "port": 443,
+      "connected": true,
+      "tls_version": "TLSv1.3",
+      "cipher": "TLS_AES_256_GCM_SHA384",
+      "subject_cn": "example.com",
+      "issuer_cn": "Cloudflare TLS Issuing ECC CA 3",
+      "issuer_org": "SSL Corporation",
+      "subject_alt_names": [
+        "example.com",
+        "*.example.com"
+      ],
+      "not_before": "Jul 29 22:10:08 2026 GMT",
+      "not_after": "Oct 27 22:17:21 2026 GMT",
+      "days_until_expiry": 61,
+      "expired": false,
+      "serial_number": "0624D0AB311558780B7D5213B9631831"
+    },
+    "weak_protocols": {
+      "protocol_support": {
+        "TLSv1": "inconclusive (blocked by local OpenSSL policy, not the server)",
+        "TLSv1_1": "inconclusive (blocked by local OpenSSL policy, not the server)",
+        "TLSv1_2": "supported by server",
+        "TLSv1_3": "supported by server"
+      },
+      "legacy_protocols_enabled": [],
+      "risk_note": null
+    },
+    "dns": {
+      "A": [
+        "172.66.147.243",
+        "104.20.23.154"
+      ],
+      "AAAA": [
+        "2606:4700:8d75:72db:f2d7:a6d:ef6b:ff98"
+      ],
+      "MX": [
+        "0 ."
+      ],
+      "NS": [
+        "hera.ns.cloudflare.com.",
+        "elliott.ns.cloudflare.com."
+      ],
+      "TXT": [
+        "\"v=spf1 -all\"",
+        "\"_k2n1y4vw3qtb4skdx9e7dxt97qrmmq9\""
+      ],
+      "CNAME": [],
+      "_osint_hints": [
+        "SPF record reveals mail infrastructure: v=spf1 -all"
+      ]
+    },
+    "subdomains": {
+      "error": "crt.sh lookup failed: HTTP Error 502: Bad Gateway",
+      "subdomains": []
+    },
+    "whois": {
+      "error": null,
+      "domain": "example.com",
+      "whois_server": "whois.iana.org",
+      "fields": {},
+      "raw": "% IANA WHOIS server\n% for more information on IANA, visit http://www.iana.org\n% This query returned 1 object\n\ndomain:       EXAMPLE.COM\n\norganisation: Internet Assigned Numbers Authority\n\ncreated:      1992-01-01\nsource:       IANA\n\n"
+    }
+  },
+  "risk_summary": {
+    "score": 0,
+    "level": "None",
+    "critical": 0,
+    "high": 0,
+    "medium": 0,
+    "low": 0
+  },
+  "total_cves": 0,
+  "kev_matches": 0
+}

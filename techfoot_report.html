@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Technology Footprint Report — https://example.com</title>
+<style>
+  body { font-family: -apple-system, Segoe UI, Roboto, sans-serif; background:#0f1115; color:#e5e7eb; margin:0; padding:2rem; }
+  h1 { font-size:1.6rem; margin-bottom:0.25rem; }
+  .muted { color:#9ca3af; font-size:0.85rem; }
+  .meta { color:#cbd5e1; font-size:0.85rem; margin:2px 0; }
+  .header { display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:1rem;
+             background:#161a22; padding:1.2rem 1.5rem; border-radius:12px; margin-bottom:1.5rem; }
+  .risk-badge { padding:0.5rem 1rem; border-radius:999px; font-weight:600; color:white; background:#6b7280; }
+  .card { background:#161a22; border:1px solid #232733; border-radius:12px; padding:1.2rem 1.5rem; margin-bottom:1rem; }
+  .card.warn { border-color:#7f1d1d; }
+  table { width:100%; border-collapse:collapse; margin-top:0.75rem; font-size:0.85rem; }
+  th, td { text-align:left; padding:6px 8px; border-bottom:1px solid #232733; }
+  th { color:#9ca3af; font-weight:600; }
+  a { color:#60a5fa; text-decoration:none; }
+  .badge { padding:2px 8px; border-radius:6px; color:white; font-size:0.75rem; font-weight:600; }
+  .sublist { columns:2; font-size:0.85rem; color:#cbd5e1; }
+  code { background:#0c0e13; padding:1px 5px; border-radius:4px; word-break:break-all; }
+  .stats { display:flex; gap:0.75rem; font-size:0.85rem; }
+  .stat { background:#0c0e13; padding:4px 10px; border-radius:8px; }
+</style>
+</head>
+<body>
+  <div class="header">
+    <div>
+      <h1>Technology Footprint &amp; CVE Report</h1>
+      <div class="muted">https://example.com &nbsp;·&nbsp; scanned 2026-08-27T12:29:58.172028+00:00 &nbsp;·&nbsp; 14.6s</div>
+    </div>
+    <div style="text-align:right">
+      <div class="risk-badge">None risk — 0/100</div>
+      <div class="stats" style="margin-top:0.5rem; justify-content:flex-end;">
+        <span class="stat">Critical: 0</span>
+        <span class="stat">High: 0</span>
+        <span class="stat">Medium: 0</span>
+        <span class="stat">Low: 0</span>
+      </div>
+    </div>
+  </div>
+
+  
+        <div class="card">
+          <h3>Security Headers — Grade F (0%)</h3>
+          <table><tr><th>Header</th><th>Present</th><th>Value</th></tr><tr><td>strict-transport-security</td><td>❌</td><td></td></tr><tr><td>content-security-policy</td><td>❌</td><td></td></tr><tr><td>x-frame-options</td><td>❌</td><td></td></tr><tr><td>x-content-type-options</td><td>❌</td><td></td></tr><tr><td>referrer-policy</td><td>❌</td><td></td></tr><tr><td>permissions-policy</td><td>❌</td><td></td></tr><tr><td>x-xss-protection</td><td>❌</td><td></td></tr><tr><td>cross-origin-opener-policy</td><td>❌</td><td></td></tr><tr><td>cross-origin-resource-policy</td><td>❌</td><td></td></tr></table>
+          <div class='muted' style='margin-top:0.5rem'>Information disclosure:<ul><li><code>server</code>: cloudflare</li></ul></div>
+        </div><div class='card'><h3>TLS Certificate</h3>
+            <div class="meta">Subject: example.com</div>
+            <div class="meta">Issuer: Cloudflare TLS Issuing ECC CA 3 (SSL Corporation)</div>
+            <div class="meta">Valid until Oct 27 22:17:21 2026 GMT (61 days left)</div>
+            <div class="meta">TLS: TLSv1.3 · Cipher: TLS_AES_256_GCM_SHA384</div>
+            <div class="meta">SANs: example.com, *.example.com</div></div><div class='card'><h3>TLS Protocol Support</h3><div class='meta'>TLSv1: inconclusive (blocked by local OpenSSL policy, not the server)</div><div class='meta'>TLSv1_1: inconclusive (blocked by local OpenSSL policy, not the server)</div><div class='meta'>TLSv1_2: supported by server</div><div class='meta'>TLSv1_3: supported by server</div></div><div class='card'><h3>DNS Records</h3><div class='meta'><b>A:</b> 172.66.147.243, 104.20.23.154</div><div class='meta'><b>AAAA:</b> 2606:4700:8d75:72db:f2d7:a6d:ef6b:ff98</div><div class='meta'><b>MX:</b> 0 .</div><div class='meta'><b>NS:</b> hera.ns.cloudflare.com., elliott.ns.cloudflare.com.</div><div class='meta'><b>TXT:</b> &quot;v=spf1 -all&quot;, &quot;_k2n1y4vw3qtb4skdx9e7dxt97qrmmq9&quot;</div><div class='muted' style='margin-top:0.5rem'>OSINT hints:<ul><li>SPF record reveals mail infrastructure: v=spf1 -all</li></ul></div></div>
+        <div class="card">
+          <h3>WHOIS</h3>
+          <div class="meta">Registrar: n/a</div>
+          <div class="meta">Created: n/a</div>
+          <div class="meta">Expires: n/a</div>
+          <div class="meta">Registrant org: n/a (often redacted)</div>
+          
+        </div>
+
+  <h2>Detected Technologies (1)</h2>
+  
+        <div class="card">
+          <h3>cloudflare <span class="muted">(version unknown)</span></h3>
+          <div class="meta">Category: Web Server &nbsp;·&nbsp; Confidence: low</div>
+          <div class="muted">Evidence: Server header: cloudflare</div>
+          
+          <p class='muted'>No CVEs matched.</p>
+        </div>
+
+  <p class="muted">Passive/authorized-recon results only. Verify manually before acting; false positives
+  are possible. Generated by techfoot v2.0 — only run against systems you are authorized to test.</p>
+</body>
+</html>
